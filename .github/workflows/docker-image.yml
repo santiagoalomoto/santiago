@@ -3,8 +3,11 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - santiago
-  pull_request:
+      - santiago  # o 'santiago' si prefieres
+
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   build:
